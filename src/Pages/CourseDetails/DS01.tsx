@@ -1,12 +1,3 @@
-// import React from 'react';
-// import "../../styles/style_course_detail.css";
-
-
-// const DS01: React.FC = () => {
-//   const handleNext = () => {
-//     localStorage.setItem("count_process_ds", JSON.stringify(1)); 
-//     window.location.href = '/courses'; 
-//   };
 import { useNavigate } from 'react-router-dom'; // เพิ่ม
 
 const DS01: React.FC = () => {

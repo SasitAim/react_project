@@ -10,16 +10,6 @@ const DA01: React.FC = () => {
     navigate('/course/da-02'); // ✅ ใช้ navigate แทน
   };
 
-// import React from 'react';
-// import "../../styles/style_course_detail.css";
-
-
-// const DA01: React.FC = () => {
-//   const handleNext = () => {
-//     localStorage.setItem("count_process_da", JSON.stringify(1)); 
-//     window.location.href = '/course/da-02'; 
-//   };
-
   return (
     <div>
       <br />
