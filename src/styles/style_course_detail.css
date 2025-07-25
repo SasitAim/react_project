@@ -1,0 +1,139 @@
+body{
+  padding: 1%;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-inline: 10%;
+}
+
+.course-h1 {
+  color:#D0D0D0;
+  font-size: 40px;
+  margin: 10px 0 5px 0;
+  text-align: center;
+}
+.course-h2 {
+  color: #D0D0D0;
+  font-size: 25px;
+  margin: 10px 0 5px 0;
+  text-align: center;
+}
+.course-h3 {
+  color: #AAAAAA;
+  font-size: 20px;
+  margin: 10px 0 5px 15%;
+  text-align: left;
+}
+.course-h4 {
+  color: #AAAAAA;
+  font-size: 18px;
+  margin: 10px 0 5px 15%;
+  text-align: left;
+}
+.course-h5 {
+  color: whitesmoke;
+  font-size: 16px;
+  margin: 10px 0 5px 15%;
+  text-align: left;
+}
+
+.course-p {
+  color: rgb(230, 11, 11);
+  padding: 0 10px;
+  font-size: 20px;
+  text-align: left;
+  line-height: 1.4;
+  word-wrap: break-word; 
+  height: 80px;          
+  max-width: 200px;
+  overflow: hidden;      
+  text-overflow: ellipsis;
+}
+
+.course-p2 {
+  color: #FFFFFF;
+  display: block;
+  padding: 0 15%;
+  font-size: 14px;
+  margin-block-start: 0em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+  text-align: justify;
+}
+
+.course-ul{
+  text-align: left;
+  padding: 0 15%;
+}
+
+.course-pic{
+  text-align: center;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.course-figcaption{
+  color: rgb(255, 255, 255);
+  font-style: italic;
+  text-align: center;
+  font-size: 12px;
+  margin: 0;
+  margin-top: 6px;
+}
+
+/* ********************************************************************* */
+
+table {
+  caption-side: bottom;
+  border-collapse: collapse;
+  width: 80%;
+  max-width: 700px;
+  margin: 0 auto;
+  display: table; 
+}
+td.description-col {
+  text-align: left;
+  padding-left: 200px; 
+}
+
+.course-pre {
+  padding: 0 15%;
+  color: rgb(23, 109, 189);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 12.5px;
+  white-space: normal;  
+  text-align: left;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+
+
+@media screen and (max-width: 768px) {
+  .home-p2, .home-ul, .home-h3 {
+    padding: 0 10px;
+    font-size: 14px;
+  }
+
+  .home-ul li {
+    font-size: 13px;
+  }
+
+  .home-pic {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* ************* */
+.btmNext{
+  margin-left: auto;
+  color: #1f1f1f;
+  background-color: skyblue;
+  padding: 15px;
+  width: 150px;
+}

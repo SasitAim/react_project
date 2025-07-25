@@ -1,0 +1,250 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* container */
+.container-contact {
+  width: 100%;
+  max-width: 950px;
+  margin: 10px auto;
+  color: white;
+  line-height: 1.5;
+  background-color: rgb(36, 36, 36);
+  padding: 20px;
+  overflow-x: hidden;
+
+}
+
+/* layout */
+.content {
+  display: flex;
+  margin-top: 40px;
+}
+
+/* icon */
+.icon {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border-radius: 30px;
+  padding: 15px;
+  vertical-align: top;
+}
+
+/* contact info */
+.contact-info {
+  display: inline-block;
+  text-align: left;
+  padding: 4px 20px 0px 20px;
+}
+
+.address-line {
+  margin-top: 40px;
+  display: flex;
+  text-align: left;
+  align-items: flex-start;
+}
+
+.contact-info-title {
+  color: skyblue;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.col-1 {
+  width: 50%;
+}
+
+/* form */
+.col-2 {
+  flex: 1;
+  background-color: white;
+}
+
+.form-container {
+  color: #000;
+  padding: 30px;
+}
+
+.form-container h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.form-row {
+  margin-bottom: 25px;
+}
+
+.form-row label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* add ลองเปลี่ยน */
+.form-field {
+  width: 100%;
+  font-size: 14px;
+  padding: 8px 0;
+  border: 1px solid #ccc;
+  background: transparent;
+  outline: none;
+  color: #000;
+  box-shadow: none;
+  appearance: none; /* <-- ✅ ปิด style พิเศษของ browser */
+  border-radius: 0;
+}
+
+
+.send-btn {
+  border: 0;
+  padding: 10px 20px;
+  background-color: skyblue;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.send-btn:hover {
+  background-color: #55c0e0;
+}
+
+
+.head_form{
+color: #000;
+text-align: left;
+}
+
+.head2_form{
+color: #000;
+text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  .container-contact {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .col-1,
+  .col-2 {
+    width: 100%;
+  }
+
+  .icon {
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+  }
+
+  .form-container {
+    padding: 15px;
+  }
+
+  .form-container h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .form-row label {
+    font-size: 14px;
+  }
+
+  .form-field {
+    font-size: 14px;
+  }
+
+  .send-btn {
+    width: 100%;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .home-h3,
+  .home-p2 {
+    padding: 0 10px;
+    text-align: justify;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container-contact {
+    padding: 15px 10px;
+    overflow-x: hidden;
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .col-1, .col-2 {
+    width: 100%;
+  }
+
+  .form-container {
+    padding: 20px 10px;
+  }
+
+  .form-container h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .form-row label {
+    font-size: 14px;
+  }
+
+  .form-field {
+    font-size: 14px;
+  }
+
+  .send-btn {
+    width: 100%;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .icon {
+    height: 36px;
+    width: 36px;
+    padding: 8px;
+  }
+
+  .contact-info {
+    padding: 0 10px;
+  }
+
+  .address-line {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .home-h3, .home-p2 {
+    padding: 0 10px;
+    text-align: justify;
+    font-size: 14px;
+  }
+}
+
+input[type="email"].form-field,
+input[type="text"].form-field {
+  background: transparent;
+  color: #000;
+  font-family: inherit;
+  border: 1px solid #ccc;
+  padding: 8px 0;
+  font-size: 14px;
+}
+

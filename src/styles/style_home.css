@@ -1,0 +1,77 @@
+.home-h1 {
+  color: white;
+  font-size: 20px;
+  margin: 10px 0 5px 0;
+  text-align: center;
+}
+
+.home-p {
+  color: white;
+  padding: 0 10px;
+  font-size: 12px;
+  text-align: left;
+  line-height: 1.4;
+  word-wrap: break-word; /* ป้องกันข้อความทะลุกรอบ */
+  height: 80px;          /* กำหนดพื้นที่เฉพาะสำหรับข้อความ */
+  max-width: 200px;
+  overflow: hidden;      
+  text-overflow: ellipsis;
+}
+
+.home-p2 {
+  color: white;
+  display: block;
+  padding: 0 5%;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+  text-align: justify;
+}
+
+.home-ul{
+  text-align: left;
+  padding: 0 5%;
+}
+
+.home-h3 {
+  text-align: justify;
+  padding: 0 5%;
+}
+
+/* Home Page Pic */
+.home-pic{
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.home-figcaption{
+  color: white;
+  font-size: 12px;
+  margin: 0;
+}
+
+
+
+/* Responsive สำหรับหน้าจอเล็ก */
+@media screen and (max-width: 768px) {
+  .home-p2, .home-ul, .home-h3 {
+    padding: 0 10px;
+    font-size: 14px;
+  }
+
+  .home-ul li {
+    font-size: 13px;
+  }
+
+  .home-pic {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+}

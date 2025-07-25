@@ -1,0 +1,77 @@
+/* สำหรับ Card */
+.card {
+  width: 250px;           /* ใช้ width แทน max-width เพื่อความคงที่ */
+  height: 400px;          /* ตั้งความสูงของ card เท่ากันทุกใบ */
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;    /* ให้การ์ดเรียงสวยในแนวบน */
+  background-color: #fff; /* เพิ่มพื้นหลังถ้าจำเป็น */
+  overflow: hidden;       /* ป้องกันการล้นของเนื้อหา */
+}
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 0.35s ease;
+}
+
+.card-image {
+  width: 100%;           /* ปรับให้เต็มความกว้างของ card */
+  height: 150px;         /* กำหนดความสูงคงที่ของรูป */
+  object-fit: contain;   /* ทำให้ภาพไม่เบี้ยวในกรอบที่ fix ไว้ */
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.card h2 {
+  color: black;
+  font-size: 20px;
+  margin: 10px 0 5px 0;
+  text-align: center;
+}
+
+.card p {
+  color: black;
+  padding: 0 10px;
+  font-size: 12px;
+  text-align: left;
+  line-height: 1.4;
+  word-wrap: break-word; /* ป้องกันข้อความทะลุกรอบ */
+  height: 50px;          /* กำหนดพื้นที่เฉพาะสำหรับข้อความ */
+  max-width: 200px;
+  overflow: hidden;     
+  text-overflow: ellipsis;
+}
+
+/*  */
+.progress {
+  background-color: #e9ecef;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  transition: width 0.3s ease-in-out;
+}
+
+.card .btn-process {
+  border-radius: 8px;
+  margin-top: 2px;
+  border: 1px solid transparent;
+  padding: 0.55em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: rgb(9, 49, 104);
+  color: white ;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.card .btn-process:hover {
+  border-color: green;
+}
