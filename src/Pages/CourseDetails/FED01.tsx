@@ -1,13 +1,13 @@
-import React from 'react';
-import "../../styles/style_course_detail.css";
+import { useNavigate } from 'react-router-dom'; // เพิ่ม
 
-// const ต้องเปลี่ยนเป็นของคอร์สนั้นๆด้วย อย่าลืม !!
 const FEC01: React.FC = () => {
-  const handleNext = () => {
-    localStorage.setItem("count_process_fed", JSON.stringify(1)); // 👈 เปลี่ยนเป็น count_process.... ให้ถูก
-    window.location.href = '/courses'; // 👈 เปลี่ยนเป็น route ที่ถูกต้อง
-  };
+  const navigate = useNavigate(); // เพิ่ม
 
+  const handleNext = () => {
+    localStorage.setItem("count_process_fed", JSON.stringify(1));
+    navigate('/courses'); // ✅ เปลี่ยนจาก window.location.href
+  };
+  
   return (
     <div>
       <br />

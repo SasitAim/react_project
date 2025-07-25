@@ -1,13 +1,26 @@
-import React from 'react';
-import "../../styles/style_course_detail.css";
+// import React from 'react';
+// import "../../styles/style_course_detail.css";
+
+// const SQL01: React.FC = () => {
+//   const handleNext = () => {
+//     let storedProgress = parseInt(localStorage.getItem('sqlCourseProgress') || '0');
+//     storedProgress = Math.min(storedProgress + 25, 100);
+//     localStorage.setItem('sqlCourseProgress', storedProgress.toString());
+//     localStorage.setItem("count_process-sql", JSON.stringify(1));
+//     window.location.href = '/course/sql-02'; 
+//   };
+import { useNavigate } from 'react-router-dom'; // เพิ่ม
 
 const SQL01: React.FC = () => {
+  const navigate = useNavigate(); // เพิ่ม
+
   const handleNext = () => {
     let storedProgress = parseInt(localStorage.getItem('sqlCourseProgress') || '0');
     storedProgress = Math.min(storedProgress + 25, 100);
     localStorage.setItem('sqlCourseProgress', storedProgress.toString());
     localStorage.setItem("count_process-sql", JSON.stringify(1));
-    window.location.href = '/course/sql-02'; // 👈 เปลี่ยนเป็น route ที่ถูกต้อง
+
+    navigate('/course/sql-02'); // ✅ เปลี่ยนจาก window.location.href
   };
 
   return (

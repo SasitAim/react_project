@@ -1,12 +1,24 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom'; // ✅ เพิ่ม
 import "../../styles/style_course_detail.css";
 
-// const ต้องเปลี่ยนเป็นของคอร์สนั้นๆด้วย อย่าลืม !!
 const DA01: React.FC = () => {
+  const navigate = useNavigate(); // ✅ ใช้ useNavigate
+
   const handleNext = () => {
-    localStorage.setItem("count_process_da", JSON.stringify(1)); // 👈 เปลี่ยนเป็น count_process.... ให้ถูก
-    window.location.href = '/course/da-02'; // 👈 เปลี่ยนเป็น route ที่ถูกต้อง
+    localStorage.setItem("count_process_da", JSON.stringify(1));
+    navigate('/course/da-02'); // ✅ ใช้ navigate แทน
   };
+
+// import React from 'react';
+// import "../../styles/style_course_detail.css";
+
+
+// const DA01: React.FC = () => {
+//   const handleNext = () => {
+//     localStorage.setItem("count_process_da", JSON.stringify(1)); 
+//     window.location.href = '/course/da-02'; 
+//   };
 
   return (
     <div>

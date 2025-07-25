@@ -1,14 +1,28 @@
-import React from "react";
-import "../../styles/style_course_detail.css";
+// import React from "react";
+// import "../../styles/style_course_detail.css";
+
+// const SQL02: React.FC = () => {
+//   const completeLesson = () => {
+//     let storedProgress = parseInt(localStorage.getItem("sqlCourseProgress") || "0");
+//     storedProgress = Math.min(storedProgress + 25, 100);
+//     localStorage.setItem("sqlCourseProgress", storedProgress.toString());
+//     localStorage.setItem("count_process-sql", JSON.stringify(2));
+//     window.location.href = "/courses";
+//   };
+import { useNavigate } from 'react-router-dom'; // เพิ่ม
 
 const SQL02: React.FC = () => {
+  const navigate = useNavigate(); // เพิ่ม
+
   const completeLesson = () => {
     let storedProgress = parseInt(localStorage.getItem("sqlCourseProgress") || "0");
     storedProgress = Math.min(storedProgress + 25, 100);
     localStorage.setItem("sqlCourseProgress", storedProgress.toString());
     localStorage.setItem("count_process-sql", JSON.stringify(2));
-    window.location.href = "/courses";
+
+    navigate('/courses'); // ✅ เปลี่ยนจาก window.location.href
   };
+
 
   return (
     <div>

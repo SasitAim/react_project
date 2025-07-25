@@ -1,11 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom"; // ✅ เพิ่ม
 import "../../styles/style_course_detail.css";
 
-// const ต้องเปลี่ยนเป็นของคอร์สนั้นๆด้วย อย่าลืม !!
 const DA02: React.FC = () => {
+  const navigate = useNavigate(); // ✅ ใช้ useNavigate
+
   const completeLesson = () => {
     localStorage.setItem("count_process_da", JSON.stringify(2));
-    window.location.href = "/courses";
+    navigate('/courses'); // ✅ ใช้ navigate แทน
   };
 
   return (

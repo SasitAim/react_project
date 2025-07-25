@@ -1,10 +1,13 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom'; // ✅ เพิ่ม
 import "../../styles/style_course_detail.css";
 
 const DE01: React.FC = () => {
+  const navigate = useNavigate(); // ✅ ใช้ useNavigate
+
   const handleNext = () => {
     localStorage.setItem("count_process_de", JSON.stringify(1));
-    window.location.href = '/course/de-02'; // 👈 เปลี่ยนเป็น route ที่ถูกต้อง
+    navigate('/course/de-02'); // ✅ ใช้ navigate แทน
   };
 
   return (

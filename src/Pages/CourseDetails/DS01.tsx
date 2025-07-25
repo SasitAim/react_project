@@ -1,12 +1,22 @@
-import React from 'react';
-import "../../styles/style_course_detail.css";
+// import React from 'react';
+// import "../../styles/style_course_detail.css";
 
-// const ต้องเปลี่ยนเป็นของคอร์สนั้นๆด้วย อย่าลืม !!
+
+// const DS01: React.FC = () => {
+//   const handleNext = () => {
+//     localStorage.setItem("count_process_ds", JSON.stringify(1)); 
+//     window.location.href = '/courses'; 
+//   };
+import { useNavigate } from 'react-router-dom'; // เพิ่ม
+
 const DS01: React.FC = () => {
+  const navigate = useNavigate(); // เพิ่ม
+
   const handleNext = () => {
-    localStorage.setItem("count_process_ds", JSON.stringify(1)); // 👈 เปลี่ยนเป็น count_process.... ให้ถูก
-    window.location.href = '/courses'; // 👈 เปลี่ยนเป็น route ที่ถูกต้อง
+    localStorage.setItem("count_process_ds", JSON.stringify(1));
+    navigate('/courses'); // ✅ เปลี่ยนจาก window.location.href
   };
+
 
   return (
     <div>
@@ -33,8 +43,6 @@ const DS01: React.FC = () => {
         We look forward to supporting your educational journey and sharing knowledge with all lifelong learners.
       </p>
       <br />
-
-      {/* <h2 className="course-h2">Continue to  Data Analyst Foundation Part 2</h2> */}
 
       <div style={{ display: 'flex', marginTop: '1rem' }}>
         <button className="btmNext" onClick={handleNext}>
