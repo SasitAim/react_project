@@ -5,7 +5,7 @@ import "../../styles/style_course_detail.css";
 const CE01: React.FC = () => {
   const handleNext = () => {
     localStorage.setItem("count_process_ce", JSON.stringify(1)); // 👈 เปลี่ยนเป็น count_process.... ให้ถูก
-    window.location.href = '/courses'; // 👈 เปลี่ยนเป็น route ที่ถูกต้อง กด  next แล้วไปไหน
+    window.location.href = '/react_project'; // 👈 เปลี่ยนเป็น route ที่ถูกต้อง กด  next แล้วไปไหน
   };
 
   return (
